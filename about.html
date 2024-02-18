@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
     <head>
-        <title>App Name: Victor Manuel Campusano Sosa </title>
+        <title>FizzBuzz: Contact form </title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,7 +34,7 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="app.html" >The App</a>
+                            <a class="nav-link" href="app.html">The App</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="code.html">The Code</a>
@@ -50,8 +50,45 @@
             </div>
         </nav>
 
-        <main class="flex-shrink-0">
 
+        <main class="flex-shrink-0">
+            <div class="container">
+                <h1 class="my-5 text-center">Let's get in touch!</h1>
+                <div class="bg-light shadow-lg p-2 border border-">
+                    <form action="POST" name="fizzbuzzForm" data-netlify="true" data-netlify-recaptcha="true">
+                        <div class="row mb-2 row-cols-1 row-cols-md-2">
+                            <div class="col">
+                                <input name="Name" class="form-control" type="text" placeholder="First name" id="firstName" aria-label="First name" required>
+                            </div>
+                            <div class="col">
+                                <input name="LastName" class="form-control" type="text" placeholder="Last name" id="lastName" aria-label="Last name" required>
+                            </div>
+                        </div>
+            
+                        <div class="row mb-2 row-cols-sm-2 row-cols-xs-1">
+                            <div class="col">
+                                <input name="Email" class="form-control" type="email" placeholder="Email" id="email">
+                            </div>
+                            <div class="col">
+                                <input name="Phone" class="form-control" type="number" placeholder="Phone (optional)" id="Phone">
+                            </div>
+                        </div>
+                    
+                        <div class="row mb-2 gy-2">
+                            <div class="col-12">
+                                <input name="Subject" class="form-control" type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="Message" class="form-control" id="message" placeholder="Message" required></textarea>
+                            </div>
+                        </div>
+
+                        <div data-netlify-recaptcha="true"></div>
+            
+                        <div><button class="btn btn-primary" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </div>
         </main>
 
         <footer class="footer mt-auto py-3 bg-light">
