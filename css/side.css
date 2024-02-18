@@ -86,3 +86,16 @@ code[class*="language-"],
     height: 100%;
     object-fit: cover;
 }
+
+.Fizz{
+    color: green;
+}
+
+.Buzz{
+    color: blue;
+}
+
+.FizzBuzz{
+    color: darkred;
+    font-weight: bold;
+}

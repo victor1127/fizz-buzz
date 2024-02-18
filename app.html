@@ -87,6 +87,9 @@
                         <div class="row pt-5">
                             <div class="col">
                                 <!--Table-->
+                                <table class="table table-responsive table-striped">
+                                    <tbody id="tableResults"></tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -109,6 +112,16 @@
                 </div>
             </div>
         </footer>
+
+        <template id="InnerTableTemplate">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </template>
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
