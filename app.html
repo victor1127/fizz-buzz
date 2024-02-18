@@ -51,7 +51,47 @@
         </nav>
 
         <main class="flex-shrink-0">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 pt-5">
+                    <div class="col border-end">
+                        <h4><strong>Fizz Buzz:</strong> A coding project</h4>
+                        <p class="">
+                            When it counts you Fizz Buzz. A javascript coding exercise using loops. 
+                            Write a program that prints the numbers from 1 to 100 and for multiples of
+                            '3' display <strong>"Fizz"</strong> instead of the number and for the multiples
+                            of '5' display <strong>"Buzz"</strong>. If a multiple of both display <strong>"FizzBuzz"</strong>.
+                        </p>
+                        <div class="pt-3">
+                            <h5 class="border-bottom border-1">Instructions</h5>
+                            <p class="lead">Enter a fizz and a buzz value. Press the button and the values will appear.</p>
+                        </div>
+                    </div>
 
+                    <div class="col">
+                        <h6>Enter values</h6>
+                        <form class="row">
+                            <div class="col">
+                                <input id="startNumber" class="form-control" type="number" min="1" max="100" placeholder="Start number" required>                             
+                            </div>
+
+                            <div class="col">
+                                <input id="endNumber" class="form-control" type="number" min="1" max="100" placeholder="End number" required>                          
+                            </div>
+                            
+                            <div class="col-12 pt-3 d-flex justify-content-md-end">
+                                <button class="btn btn-dark text-light" type="button" onclick="GetValues()">Submit</button>
+                            </div>
+
+                        </form>
+
+                        <div class="row pt-5">
+                            <div class="col">
+                                <!--Table-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="footer mt-auto py-3 bg-light">
